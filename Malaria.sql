@@ -1,13 +1,8 @@
-select Year, [Terrorism (deaths)], [ Conflict and terrorism ]
-from ['annual-number-of-deaths-by-cause']
-WHERE Entity like '%Nigeria%'
---
-Alter table annual 
 ---Case study: MALARIA IN NIGERIA
 --Malaria deaths per year in nigeria (1990-2019)
 select year, [ Malaria]
 from Causes_Of_Deaths
-
+WHERE entity like '%Nigeria%'
 order by Year asc
 --Year with highest number of deaths in Nigeria
 select  year, [ Malaria]
@@ -47,5 +42,4 @@ select year, PercentageOfMalariaDeaths
 from ['annual-number-of-deaths-by-cause']
 WHERE Entity like '%Nigeria%'
 order by Year asc
--- The change in deaths caused by conflict and terroism during buhari's regime.
-select Year, conflict and terrorism
+
